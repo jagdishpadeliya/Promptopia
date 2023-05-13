@@ -4,9 +4,9 @@ const nextConfig = {
         appDir: true,
         serverComponentsExternalPackages: ["mongoose"],
     },
-    image: {
-        domains: ["lh3.googleusercontent.com",],
-    },
+    // image: {
+    //     domains: ["lh3.googleusercontent.com",],
+    // },
     images: {
         remotePatterns: [
             {
