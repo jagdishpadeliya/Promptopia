@@ -6,7 +6,6 @@ export const GET = async (request, { params }) => {
     try {
         await connectToDB();
         const prompt = await Prompt.findById(params.id).populate('creator');
-        console.log("---" + prompt);
         if (!prompt) {
             return new Response("Prompt not found", { status: 404 })
         }
